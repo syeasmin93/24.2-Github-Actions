@@ -1,0 +1,9 @@
+name: RA24.2
+on: push
+jobs: 
+  My-First-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Check out my code
+        uses: actions/checkout@v3
+      - run: echo "$(cat My_First_Github_Workflow.txt)"
